@@ -13,7 +13,7 @@ async function renderProfilPage() {
     const user = getAuthenticatedUser();
     const {username} = user;
     
-    const url = `/api/scores/allGames?username=${encodeURIComponent(username)}`;
+    const url = `${process.env.API_BASE_URL}/scores/allGames?username=${encodeURIComponent(username)}`;
     const response = await fetch(url);
     const games = await response.json();
 
