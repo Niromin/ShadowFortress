@@ -635,7 +635,6 @@ class GameScene extends Phaser.Scene {
             }),
             headers: {
                 'Content-Type': 'application/json',
-                'Authorization': token
             },
         };
 
